@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-   
+    screens: {
+      'tablet': '768px',
+      'md': '1280px',
+      
+    },
     extend: {
       colors: {
         'rich-black': '#0D1821',
