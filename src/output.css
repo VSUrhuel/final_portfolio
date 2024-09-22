@@ -1702,6 +1702,11 @@ input[type="range"]::-ms-fill-lower {
   color: rgb(65 90 119 / var(--tw-text-opacity));
 }
 
+.hover\:text-platinum:hover {
+  --tw-text-opacity: 1;
+  color: rgb(224 225 221 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -2204,6 +2209,11 @@ input[type="range"]::-ms-fill-lower {
   .md\:hover\:text-yimin-blue:hover {
     --tw-text-opacity: 1;
     color: rgb(65 90 119 / var(--tw-text-opacity));
+  }
+
+  .md\:hover\:text-platinum:hover {
+    --tw-text-opacity: 1;
+    color: rgb(224 225 221 / var(--tw-text-opacity));
   }
 
   .md\:dark\:bg-gray-900:is(.dark *) {
