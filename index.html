@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assests/images/logo.png" type="image/x-icon" >
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
@@ -19,45 +20,42 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
           
     <link href="./src/output.css" rel="stylesheet" />
-    <title>Rhuel - Portfolio</title>
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
+
+    <title>RHUEL | Portfolio</title>
     
   </head>
   <body class="font-montserrat w-screen overflow-x-hidden">
-    <nav class="w-full bg-rich-black px-6">
-      <div class="w-full h-20 px-10 py-4 flex justify-between items-center">
-        <div
-          class="text-silver-lake-blue text-3xl font-semibold font-montserrat"
-        >
-          RHUEL
-        </div>
-        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-yimin-blue rounded-lg md:hidden hover:bg-platinum focus:outline-none focus:ring-1 focus:ring-gray-200 " aria-controls="navbar-default" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-          </svg>
-      </button>
-        <div class="md:flex space-x-8 hidden tablet:flex tablet:space-x-3">
-          <a
-            href="#home"
-            class="text-silver-lake-blue text-lg font-semibold font-raleway"
-          >
-            Home
-          </a>
-          <a
-            href="#about"
-            class="text-white active:text-silver-lake-blue text-lg font-semibold font-raleway"
-          >
-            About Me
-          </a>
-          <a href="#projects" class="text-white text-lg font-semibold font-raleway">
-            Projects
-          </a>
-          <a href="pages/resume.html" class="text-white text-lg font-semibold font-raleway">
-            Resume
-          </a>
-          <a href="" class="text-white text-lg font-semibold font-raleway">
-            Contact
-          </a>
+    <nav class="bg-rich-black px-10 py-2">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <a href="https://github.com/VSUrhuel" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="/assests/images/f_logo.png" alt="">
+            <span class="self-center text-2xl font-bold whitespace-nowrap text-yimin-blue font-raleway">RHUEL</span>
+        </a>
+        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="flex flex-col p-4 md:p-0 mt-4 border border-platinum rounded-lg bg-oxford-blue md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-rich-black md:text-xl font-semibold text-platinum">
+            <li>
+              <a href="#" class="block py-2 px-3 text-platinum bg-rich-black rounded md:bg-transparent md:text-yimin-blue md:p-0 " aria-current="page">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="block py-2 px-3 text-platinum rounded hover:text-yimin-blue md:hover:bg-transparent md:border-0 md:hover:text-yimin-blue md:p-0 ">About</a>
+            </li>
+            <li>
+              <a href="#projects" class="block py-2 px-3 text-platinum rounded hover:text-yimin-blue md:hover:bg-transparent md:border-0 md:hover:text-yimin-blue md:p-0 ">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="block py-2 px-3 text-platinum rounded hover:text-yimin-blue md:hover:bg-transparent md:border-0 md:hover:text-yimin-blue md:p-0  ">Contact</a>
+            </li>
+            <li>
+              <a href="/pages/resume.html" class="block py-2 px-3 text-platinum rounded hover:text-yimin-blue md:hover:bg-transparent md:border-0 md:hover:text-yimin-blue md:p-0  ">Resume</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -83,23 +81,25 @@
           Computer Science. Developed various programs in
           <strong>C, C++, C#, Python, Java, and PHP</strong>.
         </div>
-        <div class="flex space-x-4">
-          <button
+        <div class="flex space-x-4" >
+          <a
+          href="#about"
             class="px-3 py-2 bg-yimin-blue rounded-lg justify-start items-start gap-1.5 inline-flex text-white font-bold text-sm font-montserrat md:text-lg md:px-4 md:py-3 hover:bg-rich-black"
           >
             About Me
             <div>
               <i class="fa-solid fa-user"></i>
             </div>
-          </button>
-          <button
+          </a>
+          <a
+          href="/assests/LAURENTE_RESUME.pdf" download 
             class="px-3 py-2 border border-yimin-blue bg-rich-black rounded-lg justify-start items-start gap-1.5 inline-flex text-white font-semibold text-sm font-montserrat md:text-lg md:px-4 md:py-3 hover:bg-yimin-blue"
           >
             Download CV
             <div>
               <i class="fas fa-arrow-down pl-2 animate-bounce"></i>
             </div>
-          </button>
+          </a>
         </div>
       </div>
       <div class="w-full mx-auto relative p-0 md:mb-52 md:mt-2">
@@ -157,10 +157,10 @@
             </div>
             <h3 class="text-sm font-semibold py-2 md:text-xl md:pt-6">Dormitory System</h3>
             <p class="text-xs md:text-lg">A system that caters the needs of a dormitory.</p>
-            <button class="bg-rich-black border-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue">
+            <a href="https://github.com/VSUrhuel/Mabolo-Dormitory-System" target="_blank" class="bg-rich-black relative border-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-3 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue inline-block">
               Github Repo
               <i class="fa-brands fa-github pl-1"></i>
-            </button>
+            </a>
           </div>
           <div class="w-56 h-56 bg-yimin-blue rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]  p-2 hover:bg-platinum block text-white hover:text-black md:w-80 md:h-80 md:p-4">
             <div class="w-full h-24">
@@ -168,10 +168,10 @@
             </div>
             <h3 class="text-sm font-semibold py-2 md:text-xl md:pt-6">Hotel Management</h3>
             <p class="text-xs md:text-lg">Used for management of a hotel bookings and such.</p>
-            <button class="bg-rich-black border-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue">
+            <a href="https://github.com/VSUrhuel/vsu-accommodation-reservation-system" target="_blank" class="bg-rich-black border-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue inline-block">
               Github Repo
               <i class="fa-brands fa-github pl-1"></i>
-            </button>
+            </a>
           </div>
           <div class="w-56 h-56 bg-yimin-blue rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)]  p-2   hover:bg-platinum block text-white hover:text-black my-8 md:w-80 md:h-80 md:p-4 ">
             <div class="w-full h-24">
@@ -179,10 +179,10 @@
             </div>
             <h3 class="text-sm font-semibold py-2 md:text-xl md:pt-6">VSU - COPP</h3>
             <p class="text-xs md:text-lg">A programming platform powered by DOMjudge.</p>
-            <button class="bg-rich-black border-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue">
+            <a href="https://www.domjudge.org" target="_blank" class="bg-rich-black border-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue inline-block">
               Github Repo
               <i class="fa-brands fa-github pl-1"></i>
-            </button>
+            </a>
           </div>
           <div class="w-56 h-56 bg-yimin-blue rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2  hover:bg-platinum block text-white hover:text-black md:w-80 md:h-80 md:p-4 md:mt-6">
             <div class="w-full h-24">
@@ -190,10 +190,10 @@
             </div>
             <h3 class="text-sm font-semibold py-2  md:text-xl md:pt-6">Tic Tac Toe</h3>
             <p class="text-xs md:text-lg">A Tic Tac Toe simulation with AI in Python.</p>
-            <button class="bg-rich-black border-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2  md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue">
+            <a  href="https://github.com/VSUrhuel/tic-tac-toe-with-AI" target="_blank"  class="bg-rich-black border-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2  md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue inline-block">
               Github Repo
               <i class="fa-brands fa-github pl-1"></i>
-            </button>
+            </a>
           </div>
           <div class="w-56 h-56 bg-yimin-blue rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2  hover:bg-platinum block text-white hover:text-black md:w-80 md:h-80 md:p-4">
             <div class="w-full h-24">
@@ -201,10 +201,10 @@
             </div>
             <h3 class="text-sm font-semibold py-2 md:text-xl md:pt-6">CS50 Email</h3>
             <p class="text-xs md:text-lg">A CS50 Project which clones the features of Email.</p>
-            <button class="bg-rich-black border-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue">
+            <a href="https://github.com/VSUrhuel/CS50-Mail" class="bg-rich-black border-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue inline-block">
               Github Repo
               <i class="fa-brands fa-github pl-1"></i>
-            </button>
+            </a>
           </div>
           <div class="w-56 h-56 bg-yimin-blue rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2  hover:bg-platinum block text-white hover:text-black md:w-80 md:h-80 md:p-4">
             <div class="w-full h-24">
@@ -212,10 +212,10 @@
             </div>
             <h3 class="text-sm font-semibold py-2 md:text-xl md:pt-6">CS50 Twitter</h3>
             <p class="text-xs md:text-lg">A CS50 Project which clones the features of Twitter.</p>
-            <button class="bg-rich-black border-yimin-blue mt-2 text-sm text-white py-1 px-2 rounded-lg  md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue">
+            <a href="https://github.com/VSUrhuel/CS50-Twitter" target="_blank"  class="bg-rich-black border-yimin-blue mt-2 text-sm text-white py-1 px-2 rounded-lg  md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-yimin-blue inline-block">
               Github Repo
               <i class="fa-brands fa-github pl-1"></i>
-            </button>
+            </a>
           </div>
           
             
@@ -223,7 +223,7 @@
         
       </div>
     </div>
-    <div class="bg-yimin-blue h-auto w-full z-20 overflow-auto relative px-6 py-4 md:px-16 md:py-8 grid sm:grid-cols-2 items-center gap-16 p-4 mx-auto  text-black">
+    <div id="contact" class="bg-yimin-blue h-auto w-full z-20 overflow-auto relative px-6 py-4 md:px-16 md:py-8 grid sm:grid-cols-2 items-center gap-16 p-4 mx-auto  text-black">
       <div>
           <h1 class=" text-3xl font-extrabold">Contact Me</h1>
           <p class="text-sm  mt-2 md:text-lg">Have some big idea or brand to develop and need help? Then reach out we'd love to hear about your project  and provide help.</p>
@@ -235,10 +235,10 @@
                       <div class="bg-platinum h-10 w-10 md:h-14 md:w-14 rounded-full flex items-center justify-center shrink-0">
                         <i class="fa-regular fa-envelope md:text-2xl"></i>
                       </div>
-                      <a href="javascript:void(0)" class="text-rich-black text-sm ml-4">
-                          <small class="block md:text-lg">Mail</small>
-                          <strong class="md:text-lg">johnrhuell@gmail.com</strong>
-                      </a>
+                      <a href="mailto:johnrhuell@gmail.com" class="text-rich-black text-sm ml-4 ">
+                        <small class="block md:text-lg">Mail</small>
+                        <strong class="md:text-lg hover:underline">johnrhuell@gmail.com</strong>
+                    </a>
                   </li>
               </ul>
           </div>
@@ -247,14 +247,20 @@
               <h2 class=" text-base font-bold md:text-xl">Socials</h2>
 
               <ul class="flex mt-4 space-x-4 md:text-3xl ">
-                  <li class="bg-platinum h-10 w-10 rounded-full flex items-center justify-center shrink-0 md:h-14 md:w-14">
-                    <i class="fa-brands fa-facebook"></i>
+                  <li  class="bg-platinum h-10 w-10 rounded-full flex items-center justify-center shrink-0 md:h-14 md:w-14 hover:bg-rich-black hover:text-white">
+                    <a href="https://www.facebook.com/johnrhuel.laurente" target="_blank" class="social-link">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
                   </li>
-                  <li class="bg-platinum h-10 w-10 rounded-full flex items-center justify-center shrink-0 md:h-14 md:w-14">
-                    <i class="fa-brands fa-linkedin"></i>
+                  <li class="bg-platinum h-10 w-10 rounded-full flex items-center justify-center shrink-0 md:h-14 md:w-14 hover:bg-rich-black hover:text-white">
+                    <a href="https://www.linkedin.com/in/john-rhuel-laurente-181357248/" target="_blank" class="social-link">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
                   </li>
-                  <li class="bg-platinum h-10 w-10 rounded-full flex items-center justify-center shrink-0 md:h-14 md:w-14">
-                    <i class="fa-brands fa-instagram"></i>
+                  <li class="bg-platinum h-10 w-10 rounded-full flex items-center justify-center shrink-0 md:h-14 md:w-14 hover:bg-rich-black hover:text-white">
+                    <a href="https://www.instagram.com/rhuelski29/" target="_blank" class="social-link">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
                   </li>
               </ul>
           </div>
@@ -270,6 +276,7 @@
         </p>
       </footer>
     </div>
+   
   </body>
   
 </html>
