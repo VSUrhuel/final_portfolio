@@ -794,6 +794,11 @@ video {
   border-color: rgb(65 90 119 / var(--tw-border-opacity));
 }
 
+.border-rich-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(13 24 33 / var(--tw-border-opacity));
+}
+
 .bg-oxford-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(27 38 59 / var(--tw-bg-opacity));
@@ -1056,7 +1061,7 @@ video {
   }
 }
 
-@media (min-width: 1026px) {
+@media (min-width: 1110px) {
   .md\:top-20 {
     top: 5rem;
   }
