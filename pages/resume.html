@@ -23,7 +23,7 @@
   <link href="/src/output.css" rel="stylesheet" />
   <title>Rhuel - Portfolio</title>
 </head>
-<body class="font-montserrat">
+<body class="font-montserrat text-black">
   <nav class="w-full bg-rich-black px-6">
     <div class="w-full h-20 px-10 py-4 flex justify-between items-center">
       <div class="text-silver-lake-blue text-3xl font-semibold font-montserrat">
@@ -37,25 +37,28 @@
           Home
         </a>
         <a
-          href="/index.html"
+          href="#education"
           class="text-white active:text-silver-lake-blue text-lg font-semibold font-raleway"
         >
-          About Me
+          Education
         </a>
         <a
-          href="/index.html"
-          class="text-white text-lg font-semibold font-raleway"
+          href="#projects"
+          class="text-white active:text-silver-lake-blue text-lg font-semibold font-raleway"
         >
           Projects
         </a>
+        <a href="#skills" class="text-white text-lg font-semibold font-raleway">
+          Skills
+        </a>
         <a
-          href="resume.html"
+          href="#certificates"
           class="text-white text-lg font-semibold font-raleway"
         >
-          Resume
+          Certificates
         </a>
         <a href="" class="text-white text-lg font-semibold font-raleway">
-          Contact
+          Leadership
         </a>
       </div>
     </div>
@@ -64,19 +67,156 @@
     id="resume"
     class="bg-yimin-blue h-auto w-full z-20 overflow-auto relative px-6 py-4 md:px-16 md:py-8"
   >
-    <h2 class="text-2xl font-bold font-raleway">Resume</h2>
-    <p class="text-sm mb-2">Here's a quick look to my credentials!</p>
-    <h3 class="text-lg font-semibold font-raleway">Education</h3>
-    <ul class="indent-4 text-xs">
+    <h2
+      class="text-2xl font-bold font-raleway tablet:3xl md:text-4xl md:font-bold"
+    >
+      Resume
+    </h2>
+    <p class="text-sm mb-2 tablet:text-lg md:text-xl">
+      Here's a quick look to my credentials!
+    </p>
+    <div class="flex space-x-4">
+      <button
+        class="px-3 py-2 border border-yimin-blue bg-rich-black rounded-lg justify-start items-start gap-1.5 inline-flex text-white font-semibold text-sm font-montserrat md:text-lg md:px-4 md:py-3 hover:bg-[#0D182180]"
+      >
+        Download CV
+        <div>
+          <i class="fas fa-arrow-down pl-2 mt-2 animate-bounce"></i>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div
+    id="education"
+    class="md:w-full bg-oxford-blue md:px-16 md:py-8 md:pt-4 px-6 pt-4 block md:block text-white tablet:pb-8 pb-3"
+  >
+    <h3
+      class="text-lg font-semibold font-raleway tablet:text-2xl md:text-3xl md:font-bold"
+    >
+      Education
+    </h3>
+    <img
+      src="/assests/images/vsu1.jpg"
+      alt=""
+      class="rounded-lg my-2 md:h-1/2 md:w-full md:object-cover shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+    />
+
+    <ul class="indent-4 text-sm tablet:text-lg md:text-lg">
       <li class="font-bold">Visayas State University</li>
-      <li class="">Bachelor of Science in Computer Science</li>
+      <li class="">BS in Computer Science</li>
       <li class="">2022 - Present</li>
     </ul>
-    <h3 class="text-lg font-semibold font-raleway mt-3">Skills</h3>
-    <div class="">
-      <p class="indent-4 text-xs font-bold">Programming Languages</p>
+  </div>
+
+  <div
+    id="projects"
+    class="bg-yimin-blue h-auto w-full z-20 overflow-auto relative px-6 py-4 md:px-16 md:py-8"
+  >
+    <h3
+      class="text-lg font-semibold font-raleway tablet:text-2xl md:text-3xl md:font-bold"
+    >
+      Featured Projects
+    </h3>
+    <p class="text-sm md:text-lg">
+      Here's my featured projects that showcases my skills
+    </p>
+    <div class="block py-4">
       <div
-        class="indent-5 grid grid-cols-3 text-8xl my-3 justify-center items-center mx-auto align-middle space-x-0"
+        class="grid grid-cols-1 justify-items-center space-y-2 align-middle items-center md:space-y-4 md:grid-cols-3 md:space-x-3 tablet:grid-cols-2 tablet:space-y-2"
+      >
+        <div
+          class="w-56 h-56 bg-rich-black rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2 m-0 hover:bg-platinum block text-white hover:text-black md:w-80 md:h-80 md:p-4 md:mt-4"
+        >
+          <div class="w-full h-24">
+            <img
+              src="/assests/images/dormitory_system.svg"
+              alt=""
+              class="w-full h-24 object-cover rounded-lg md:h-28"
+            />
+          </div>
+          <h3 class="text-sm font-semibold py-2 md:text-xl md:pt-6">
+            Dormitory System
+          </h3>
+          <p class="text-xs md:text-lg">
+            A system that caters the needs of a dormitory.
+          </p>
+          <button
+            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-rich-black hover:text-white"
+          >
+            Github Repo
+            <i class="fa-brands fa-github pl-1"></i>
+          </button>
+        </div>
+        <div
+          class="w-56 h-56 bg-rich-black rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2 hover:bg-platinum block text-white hover:text-black md:w-80 md:h-80 md:p-4"
+        >
+          <div class="w-full h-24">
+            <img
+              src="/assests/images/hotel_management.svg"
+              alt=""
+              class="w-full h-24 object-cover rounded-lg md:h-28"
+            />
+          </div>
+          <h3 class="text-sm font-semibold py-2 md:text-xl md:pt-6">
+            Hotel Management
+          </h3>
+          <p class="text-xs md:text-lg">
+            Used for management of a hotel bookings and such.
+          </p>
+          <button
+            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-rich-black hover:text-white"
+          >
+            Github Repo
+            <i class="fa-brands fa-github pl-1"></i>
+          </button>
+        </div>
+        <div
+          class="w-56 h-56 bg-rich-black rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2 hover:bg-platinum block text-white hover:text-black my-8 md:w-80 md:h-80 md:p-4"
+        >
+          <div class="w-full h-24">
+            <img
+              src="/assests/images/domjudge.svg"
+              alt=""
+              class="w-full h-24 object-cover rounded-lg md:h-28"
+            />
+          </div>
+          <h3 class="text-sm font-semibold py-2 md:text-xl md:pt-6">
+            VSU - COPP
+          </h3>
+          <p class="text-xs md:text-lg">
+            A programming platform powered by DOMjudge.
+          </p>
+          <button
+            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 hover:bg-rich-black hover:text-white"
+          >
+            Github Repo
+            <i class="fa-brands fa-github pl-1"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="skills"
+    class="md:w-full bg-oxford-blue md:px-16 md:py-8 md:pt-4 px-6 pt-4 block md:block text-white tablet:pb-8 pb-3"
+  >
+    <h3
+      class="text-lg font-semibold font-raleway mt-3 tablet:text-2xl md:text-3xl"
+    >
+      Skills
+    </h3>
+    <p class="text-sm pb-3 tablet:text-lg">
+      These are the skills I have acquired in the academe. This ranges from
+      <strong>profecient</strong> programming languages to the tools and
+      frameworks I have <strong>used</strong>.
+    </p>
+    <div class="">
+      <p class="indent-4 text-sm font-bold tablet:text-lg md:tetx-2xl">
+        Programming Languages
+      </p>
+      <div
+        class="indent-5 grid grid-cols-3 text-7xl px-4 my-3 justify-center items-center mx-auto align-middle space-x-0 tablet:text-9xl md:grid-cols-6"
       >
         <div>
           <i class="devicon-c-plain mx-auto"></i>
@@ -97,12 +237,14 @@
           <i class="devicon-php-plain mx-auto"></i>
         </div>
       </div>
-      <p class="indent-4 text-xs font-bold">Technology and Frameworks</p>
+      <p class="indent-4 text-sm font-bold tablet:text-lg">
+        Technology and Frameworks
+      </p>
       <div
-        class="indent-0 grid grid-cols-3 text-5xl p-3 justify-center items-center mx-auto justify-items-center space-x-0 space-y-3"
+        class="indent-0 grid grid-cols-3 text-5xl p-3 justify-center items-center mx-auto justify-items-center space-x-0 space-y-3 tablet:text-7xl tablet:pr-16 tablet:space-x-0 md:grid-cols-8"
       >
         <div>
-          <i class="devicon-html5-plain mx-auto"></i>
+          <i class="devicon-html5-plain mx-auto my-auto"></i>
         </div>
         <div>
           <i class="devicon-css3-plain mx-auto"></i>
@@ -148,8 +290,17 @@
         </div>
       </div>
     </div>
-    <h3 class="text-lg font-semibold font-raleway mt-3">Certificates</h3>
-    <p class="text-sm">
+  </div>
+  <div
+    id="certificates"
+    class="bg-yimin-blue h-auto w-full z-20 overflow-auto relative px-6 py-4 md:px-16 md:py-8"
+  >
+    <h3
+      class="text-lg font-semibold font-raleway mt-3 tablet:text-3xl tablet:font-bold"
+    >
+      Certificates
+    </h3>
+    <p class="text-sm tablet:text-lg">
       These are the certificates I have received that is related in Computer
       Science field, these includes from completed courses and the likes.
     </p>
@@ -171,10 +322,10 @@
             Python Essentials I
           </h3>
           <p class="text-xs md:text-lg">
-            An introductory course to Python by Cisco.
+            A introductory course to Python by Cisco.
           </p>
           <button
-            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 font-raleway"
+            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 font-raleway hover:bg-silver-lake-blue hover:text-black"
           >
             Show Credentials
             <i class="fa-solid fa-arrow-right"></i>
@@ -194,10 +345,10 @@
             Python Essentials II
           </h3>
           <p class="text-xs md:text-lg">
-            An more deeper course to Python involving OOP concepts by Cisco.
+            A course to Python involving OOP concepts by Cisco.
           </p>
           <button
-            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 font-raleway"
+            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 font-raleway hover:bg-silver-lake-blue hover:text-black"
           >
             Show Credentials
             <i class="fa-solid fa-arrow-right"></i>
@@ -214,13 +365,13 @@
             />
           </div>
           <h3 class="text-sm font-semibold py-2 md:text-xl md:pt-6">
-            Introduction to Data Science
+            Intro to Data Science
           </h3>
           <p class="text-xs md:text-lg">
             An introductory course to Data Science by Cisco.
           </p>
           <button
-            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 font-raleway"
+            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 font-raleway hover:bg-silver-lake-blue hover:text-black"
           >
             Show Credentials
             <i class="fa-solid fa-arrow-right"></i>
@@ -240,10 +391,10 @@
             Data Analytics Essentials
           </h3>
           <p class="text-xs md:text-lg">
-            A course dwelling in DA which involves laboratories and quizzes.
+            A course dwelling in DA which involves laboratories.
           </p>
           <button
-            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 font-raleway"
+            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 font-raleway hover:bg-silver-lake-blue hover:text-black"
           >
             Show Credentials
             <i class="fa-solid fa-arrow-right"></i>
@@ -263,14 +414,92 @@
             C Problem Solving (Basic)
           </h3>
           <p class="text-xs md:text-lg">
-            A certificate of passing the HackerRank C programming test.
+            A certificate of passing the HackerRank test.
           </p>
           <button
-            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 font-raleway"
+            class="border-rich-black bg-yimin-blue text-sm text-white py-1 px-2 rounded-lg mt-2 md:py-3 md:px-4 md:text-lg md:my-4 font-raleway hover:bg-silver-lake-blue hover:text-black"
           >
             Show Credentials
             <i class="fa-solid fa-arrow-right"></i>
           </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    id="leadership"
+    class="md:w-full bg-oxford-blue md:px-16 md:py-8 md:pt-4 px-6 pt-4 block md:block text-white tablet:pb-8 pb-3"
+  >
+    <h3
+      class="text-lg font-semibold font-raleway mt-3 tablet:text-3xl tablet:font-bold"
+    >
+      Leadership
+    </h3>
+    <p class="text-sm tablet:text-lg">
+      These are the collections that shows my leadership skills.
+    </p>
+    <div class="block py-2">
+      <div>
+        <div
+          class="grid grid-cols-1 justify-items-center space-y-2 align-middle items-center md:space-y-4 md:grid-cols-2 tablet:grid-cols-2 tablet:space-y-2"
+        >
+          <div
+            class="w-80 h-64 bg-yimin-blue rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2 m-0 text-white md:w-full md:h-72 md:p-4 md:mt-4 pl-4"
+          >
+            <h3 class="text-sm font-semibold pt-2 md:text-xl md:pt-2">
+              CS3 Head Education Committee
+            </h3>
+            <p class="text-sm pb-2 md:text-lg">2024-Present</p>
+            <ul
+              class="text-sm list-disc mx-6 md:text-lg items-center my-auto justify-center"
+            >
+              <li>
+                Collaborated with fellow mentors to create supportive study
+                groups.
+              </li>
+              <li>
+                Facilitated a peer-to-peer learning experiences leading to a 30%
+                higher passing rate.
+              </li>
+              <li>
+                Managed and analyzed mentor-mentee allocation for 107 mentees.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="w-80 h-64 bg-yimin-blue rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2 m-0 text-white md:w-full md:h-72 md:p-4 md:mt-4 pl-4 md:ml-8"
+          >
+            <h3 class="text-sm font-semibold pt-2 md:text-xl md:pt-2">
+              Research Team Leader
+            </h3>
+            <p class="text-sm pb-2 md:text-lg">2023-Present</p>
+            <ul class="text-sm list-disc mx-6 md:text-lg">
+              <li>
+                Demonstrated leadership and research skills by leading a team of
+                young researchers at Dulag NHS. Won 1st place Best Presenter and
+                Poster, 2nd in Paper.
+              </li>
+              <li>
+                Successfully conducted a study exploring the potential of
+                locally sourced seaweed as an alternative to sparkling wine.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="w-80 h-52 bg-yimin-blue rounded-lg shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-2 m-0 text-white md:w-full md:h-52 md:p-4 pl-4"
+          >
+            <h3 class="text-sm font-semibold pt-2 md:text-xl md:pt-2">
+              Mentor
+            </h3>
+            <p class="text-sm pb-2 md:text-lg">2019</p>
+            <ul class="text-sm list-disc mx-6 md:text-lg">
+              <li>
+                Mentor for Courses: Data Structures and Algorithm and
+                Fundamentals of Programming.
+              </li>
+              <li>Achieved a 100% passing rate for FOP mentees.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
